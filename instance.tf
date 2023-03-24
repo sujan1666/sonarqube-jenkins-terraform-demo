@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
   instance_type          = var.inst_type[1] // or var.inst_type[0], var.inst_type[2]
   count                  = var.inst_count
   availability_zone      = "us-east-1a"
-  key_name               = "kk"
+  key_name               = "kk1"
   #vpc_security_group_ids = [sg-0e7597c4247e7e9d4]
 
   tags = var.ec2_instance_tags
