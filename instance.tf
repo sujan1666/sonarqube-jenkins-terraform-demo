@@ -4,7 +4,7 @@ resource "aws_instance" "web" {
   count                  = var.inst_count
   availability_zone      = "ap-south-1a"
   key_name               = "kk"
-  vpc_security_group_ids = [aws_security_group.allow_http_ssh.id]
+  vpc_security_group_ids = "sg-0e7597c4247e7e9d4"
 
   tags = var.ec2_instance_tags
 }
