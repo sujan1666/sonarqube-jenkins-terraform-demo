@@ -6,7 +6,7 @@ variable "inst_type" {
 variable "inst_count" {
   description = "No of EC2 instances to be launched"
   type        = number
-  default     = 2
+  default     = 1
 }
 variable "ec2_instance_tags" {
   description = "Default tags to be used"
